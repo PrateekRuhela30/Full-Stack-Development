@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+        }
+        .container {
+            display: flex;
+            height: 1000px;
+            width: 1500px;
+            border: 2px solid black;
+            flex-direction: row;
+            gap: 50px;
+            justify-content: center;
+            /* spcace-between , space-around , space-evenly */
+            text-align: center;
+            align-items: center;
+            flex-wrap: wrap;
+            /* to shift the boxes to the next line when the width of the container is not enough to hold all the boxes in a single line */
+            align-content: start;
+
+        }
+        div {
+            height: 200px;
+            width: 200px;
+            border: 2px solid black;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* add center in the class in div to center the text in the box */
+        .first {
+            background-color: lightblue;
+            /* align-self: end; to shift the box to the end of the container */
+            /* order: 4; to change the order of the boxes in the container */
+            /* flex-grow: 1; to make the box grow and fill the available space in the container */
+            flex-basis: 400px; /* to set the initial size of the box */
+        }
+        .second {
+            background-color: lightgreen;
+            flex-shrink: 2;
+        }
+        .third {
+            background-color: lightcoral;
+            /* align-self: center; to shift the box to the center of the container */
+            /* order: 2 */
+            /* flex-grow: 1; */
+        }
+        .fourth {
+            background-color: lightgoldenrodyellow;
+            /* order: -1; */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="first center">
+            first box
+        </div>
+        <div class="second center">
+            second box
+        </div>
+        <div class="third center">
+            third box
+        </div>
+        <div class="fourth center">
+            fourth box
+        </div>
+    </div>
+</body>
+</html>

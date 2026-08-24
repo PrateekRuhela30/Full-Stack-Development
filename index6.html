@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postion property</title>
+    <style>
+        .container{
+            width: 100%;
+            height: 2000px;
+            border: 1px solid black;
+            position: relative;
+        }
+        img{
+            
+            width: 300px;
+            height: 300px;
+        }
+        .first{
+            position: static;
+            top: 20px;
+            left: 30px;
+        }
+        .second{
+            position: relative;
+            top: 20px;
+            left: 30px;
+        }
+        .third{
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }
+        .fourth{
+            position: fixed;
+            top: 20px;
+            left: 30px;
+        }           
+        .fifth{
+            position: sticky;
+            top: 20px;
+            left: 30px;
+        }
+        .conatiner{
+            width: 100%;
+            height: 1000px;
+            border: 1px solid black;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <img src="image.png" alt="image" class="first">
+        <img src="image copy.png" alt="image" class="second">
+        <img src="image copy 2.png" alt="image" class="third">
+        <img src="image copy 3.png" alt="image" class="fourth">
+        <img src="image.png" alt="image" class="fifth">
+    </div>
+    
+    <div class="conatiner">
+        This is content inside container 2
+    </div>
+</body>
+</html>

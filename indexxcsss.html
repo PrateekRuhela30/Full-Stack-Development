@@ -1,0 +1,93 @@
+<!--    Continue CSS     -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*  We choose class using ' . '  and ID using ' # '  */
+
+        /* class selector */
+        .First{
+            color:blue;
+            background-color:lightgray;
+        }
+
+
+        /* ID selector */
+        #Second{
+            color:green;
+            background-color:lightgray;
+        }
+
+        /* descendant selector */
+        div p{
+            color:purple;
+            background-color:lightgray;
+        }
+        div.third>p{
+            color:rgb(52, 12, 233);
+            background-color:lightgray;
+        }
+         h6~p{                              /*styling will aplly for the first paragraph after h6 tag */
+            color:rgb(25, 169, 25);
+            background-color:lightgray;
+        }
+
+
+
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+</head>
+<body>
+
+
+    <div class="First">
+        This is our first Class 
+    </div>
+
+   
+    <hr>
+   
+
+    <div id="Second">
+        This is our second ID
+    </div>
+
+
+    <div class="third">
+        <p> this is paragraph inside a div element</p>
+        <div>
+            this is second child div element inside a div element
+        </div>
+    </div>
+    <h6> this is heading element </h6>
+    <p> this is paragraph element below heading 6</p>
+    <p>This is paragrapgh after two line of h6 tag</p>
+
+    <div class="externel">
+        this is external div element
+    </div>
+
+
+
+
+
+
+    
+</body>
+</html>

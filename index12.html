@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card{
+            width: 300px;
+            height: 400px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            
+        }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .ease-cut{
+            transition-timing-function: ease-cut;
+            transition-duration: ;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="sports.png" alt="Image" style="width: 100%; height: 200px; object-fit: cover;">
+        <div style="padding: 20px;">
+            <h3>Card Title</h3>
+            <p>This is a simple card component with a hover effect.</p>
+        </div>
+    </div>
+</body>
+</html>

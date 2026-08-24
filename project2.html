@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khatarnak News</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <style>
+        img{
+            width:20%;
+            height:auto;
+        }
+        :root{
+            --ink:#111;
+            --accent:#b3122a;
+            --bg:#f4f4f4;
+            --line:#ddd;
+        }
+        *{
+            box-sizing:border-box;
+        }
+        body{
+            margin:0;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height:1.6;
+            background-color:var(--bg);
+            color:var(--ink);
+        }
+        header{
+            background-color:#fff;
+            text-align:center;
+            padding: 14px 40px;
+            border-bottom: 4px solid var(--ink);
+        }
+        header h1{
+            margin:0;
+            font-size:2.2rem;
+            letter-spacing:1px;
+        }
+        header p{
+            margin:0;
+            font-size:1rem;
+            color:#666;
+            font-style:italic;
+            font-size:01rem;
+            
+        }
+        nav{
+            background-color:var(--ink);
+
+
+        }
+        nav ul{
+            display:flex;
+            list-style:none;
+            justify-content:center;
+            align-items:center;
+            margin:0 ;
+            padding: 0;
+            
+        }
+        nav a{
+            color:#fff;
+            text-decoration:none;
+            padding: 14px 20px;
+            display:block;
+            font-size:0.9rem;
+            padding: 12px 18px;
+        }
+        nav a:hover{
+            background-color:var(--accent);
+        }
+        .layout{
+            display:grid;
+            grid-template-columns: 2.5fr 1fr;
+            gap:20px;
+            padding:20px;
+            margin:auto;
+            max-width:1000px;
+        }
+        main{
+            min-width:0;
+        }
+        section{
+            margin-bottom:40px;
+        }
+        h2.section-title{
+            font-size:1.5rem;
+            color:var(--ink);
+            border-bottom:2px solid var(--accent);
+            font-family:Arial, Helvetica, sans-serif;
+            font-size:1.3rem;
+            text-transform:uppercase;
+            padding-bottom:4px;
+            margin-bottom:10px;
+        }
+        article{
+            display:flex;
+            gap:20px;
+            margin-bottom:20px;
+            background:#fff;
+            flex-wrap:wrap;
+            gap:15px;
+            padding:15px;
+            margin-bottom:15px;
+        }
+        article figure{
+            margin:0;
+            flex:0 0 160px;
+
+        }
+        article img{
+            width:160px;
+            height:110px;
+            object-fit:cover;
+        }
+        article figcaption{
+            font-size:0.8rem;
+            color:#666;
+            text-align:center;
+        }
+        article .content{
+            flex:1;
+            min-width:200px;
+        }
+        aside{
+            background-color:#fff;
+            border:1px solid var(--line);
+            padding:15px;
+            align-self:start;
+        }
+        aside h3{
+            border-bottom:1px solid var(--line);
+            color:var(--accent);
+            padding:2px;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        aside ul{
+            list-style:none;
+            padding:0;
+        }
+        footer{
+            text-align:center;
+            color:grey;
+            padding: 20px;
+            background-color:var(--ink);
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Khatarnak News</h1>
+        <p>Your trusted source for today's news</p>
+    </header>
+        <nav>
+            <ul>
+
+                <li><a href="#breaking">Breaking </a></li>
+                <li><a href="#plotics">Politics</a></li>            
+                <li><a href="#sports">Sports</a></li>
+                <li><a href="#technology">Technology</a></li>
+                <li><a href="#entertainment">Entertainment</a></li>            
+                
+            </ul>
+        </nav>
+
+    <div class="layout">
+        <main>
+            <p class="breaking" id="breaking">
+                <span style="color:red">&#8226</span>BREAKING: Parliament passes a new digital privacy bill. </p>
+                <section id="plotics">
+                    <h2 class="section-title">Politics</h2>
+                    <article>
+                        <figure>
+                            <img src="parliament.png" alt="parliament">
+                            <figcaption>Parliament </figcaption>
+                        </figure>
+                        <div class="content">
+                            <h3>Parliament passes new bill</h3>
+                            <p>The parliament has passed a new bill that aims to improve the country's economy. The bill includes measures to support small businesses and promote job growth.</p>
+
+                        </div>
+                    </article>
+                </section>
+                <section id="sports">
+                    <h2 class="section-title">Sports</h2>
+                    <article>
+                        <figure>
+                            <img src="sports.png" alt="sports">
+                            <figcaption>Sports</figcaption>
+                        </figure>
+                        <div class="content">
+                            <h3>Ro-KO has done 100 runs partnership</h3>
+                            <p>The Ro-KO team has achieved a remarkable milestone by completing a 100-run partnership in the latest match.</p>
+                        </div>
+                    </article>
+                </section>
+                <section id="technology">
+                    <h2 class="section-title">Technology</h2>
+                    <article>
+                        <figure>
+                            <img src="technology.png" alt="technology">
+                            <figcaption>Technology</figcaption>
+                        </figure>
+                        <div class="content">
+                            <h3>New AI technology revolutionizes industry</h3>
+                            <p>A new AI technology has been developed that is set to revolutionize the industry. Experts believe it will lead to increased efficiency and productivity.</p>
+                        </div>
+
+                    </article>
+                </section>
+                <section id="entertainment">
+                    <h2 class="section-title">Entertainment</h2>
+                    <article>
+                        <figure>
+                            <img src="entertaiment.png" alt="entertainment">
+                            <figcaption>Entertainment</figcaption>
+                        </figure>
+                        <div class="content">
+                            <h3>New blockbuster movie released</h3>
+                            <p>A new blockbuster movie has been released, receiving rave reviews from critics and audiences alike. The film is expected to break box office records.</p>
+                    </article>
+                </section>
+        </main>
+        <aside>
+            <h3>Popular</h3>
+            <ul>
+                <li>Top 10 startups of 2026</li>
+                <li>Cricket world cup schedule</li>
+            </ul>
+            <h3>Trending</h3>
+            <ul>
+                <li>Latest tech gadgets</li>
+                <li>Upcoming sports events</li>
+            </ul>
+            <h3>Recent posts</h3>
+            <ul>
+                <li>AI technology in healthcare</li>
+                <li>Future of renewable energy</li>
+            </ul>
+        </aside>
+    </div>
+    <footer>
+        &copy; 2026 Khtarnak News. All rights reserved.
+    </footer>
+</body>
+</html>

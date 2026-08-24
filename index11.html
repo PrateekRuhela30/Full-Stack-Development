@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transition Property</title>
+
+
+    <style>
+
+
+        body{
+            height:100vh;
+            width:100vw;
+        }
+      .box1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 100vh; */
+        height:50%;
+      }
+      .box {
+        height: 200px;
+        width: 200px;
+
+        border: 2px solid black;
+        background-color: aquamarine;
+        margin: auto;
+      }
+      .box:hover {
+        background-color: red;
+        transform: translateY(-100px) translateX(100px)  scale(1.5);
+        transition: transform 0.5s ease;
+      }
+
+
+      button {
+        background-color: rgb(188, 51, 51);
+        transition: background-color 0.5s ease;
+      }
+      
+
+
+    </style>
+  </head>
+
+  <body>
+
+
+    <div class="box1">
+      <div class="box">I am learn transition properties</div>
+    </div>
+
+    <button onclick="window.location.href='News.html'">Go to News</button>
+
+
+
+
+  </body>
+</html>

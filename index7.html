@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio website</title>
+    <style>
+        :root{
+            --ink: black;
+            --bg: white;
+            --line:rgb(162, 158, 158);
+            --accent:rgb(179, 175, 175);
+        }
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--ink);
+            line-height: 1.6;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: var(--ink);
+            color: #fff;
+            flex-wrap: wrap;
+            padding: 20px 40px;
+        }
+        header h1{
+            margin: 0;
+            font-size: 2rem;
+        }
+        header p{
+            margin: 0;
+            font-size: 0.8rem;
+            color: #ccc;
+        }
+        header nav a{
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 1rem;
+        }
+        header nav a:hover{
+            background-color: var(--accent);
+        }
+        main{
+            max-width: 900px;
+            margin: 0 auto;
+            padding:30px 20px
+        }
+        figure{
+            text-align: center;
+        }
+        figure img{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid var(--line);
+            object-fit: cover;
+        }
+        figure figcaption{
+            margin-top: 10px;
+            font-style: italic;
+            color: var(--line);
+        }
+        ul.skills{
+            display: flex;
+            list-style: none;
+            gap: 10px;  
+        }
+        table{
+            width:100%;
+            border-collapse:collapse;
+
+        }
+        thead{
+            background: var(--accent);
+            color:#fff;
+        }
+        ul.skills li{
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Prateek Ruhela</h1>
+            
+            <p>Frontend Developer</p>
+        </div>
+        <nav>
+            
+                <a href="#about">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <figure>
+                <img src="" alt="">
+                <figcaption>"I love Web Development"</figcaption>
+            </figure>
+            <p> I am a passionate frontend developer with experience in creating responsive and user-friendly websites.</p>
+        </section>
+        <hr>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Responsive Design</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="contact">
+            <h2>Contact</h2>
+                <h3>Contact: 8979013324   </h3>
+                
+                <h3>Email: prateekruhela50@gmail.com</h3>
+        </section>
+        <hr>
+        <section id="projects">
+            <h2>Projects</h2>
+            <article>
+                
+                <h3>Restaurant website</h3>
+                <p>A menu and reservation page</p>
+            </article>
+            <article>
+                <h3>College event website</h3>
+                <p>A website for promoting and managing college events.</p>
+            </article>
+        </section>
+        <hr>
+        <section id="education">
+            <h2>Education</h2>
+            <p>Bachelor's degree in Computer Science from GLA University.</p>
+            <h3>Weekly timetable</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>9-10</th>
+                        <th>10-11</th>
+                        <th>11-12</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>HTML</td>
+                        <td>CSS</td>
+                        <td >Web development lab</td>
+                    </tr>
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>JavaScript</td>
+                        <td>Computer Science</td>
+                        <td>Maths</td>
+                    </tr>
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>OS</td>
+                        <td>DBMS</td>
+                        <td>Networks</td>
+                    </tr>
+                </table>
+            </section>
+            <hr>
+    </main>
+    
+</body>
+</html>
