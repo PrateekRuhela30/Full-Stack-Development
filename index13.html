@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            margin:0;
+            min-height:100vh;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background-color:#eaf7ff;
+        }
+
+        .scene{
+            width: min(80vw, 700px);
+            height: 320px;
+            display:flex;
+            align-items:flex-end;
+            justify-content:center;
+            border-bottom:8px solid #34495e;
+        }
+
+        .ball{
+            width:70px;
+            height:70px;
+            margin-bottom:8px;
+            border:3px solid #9a2f2f;
+            border-radius:50%;
+            background-color:#e74c3c;
+            animation:jump 1s ease-in-out infinite;
+            animation-fill-mode:forwards;
+        }
+        .ball:hover{
+            animation-play-state:paused;
+        }
+
+        @keyframes jump{
+            0%{
+                transform:translateY(0);
+            }
+
+            50%{
+                transform:translateY(-220px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main class="scene">
+        <div class="ball" aria-label="Jumping ball"></div>
+    </main>
+    
+</body>
+</html>
