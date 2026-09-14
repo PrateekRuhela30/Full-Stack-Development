@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodePath Academy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        html {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-white text-gray-900">
+    <header class="sticky top-0 z-50 bg-white shadow-sm">
+      <nav
+        class="max-w-6xl mx-auto px-4 py-4 flex flex-wrap justify-between items-center"
+      >
+        <a href="#home" class="text-2xl font-bold text-indigo-700">CodePath</a>
+        <div class="flex flex-wrap gap-4">
+          <a href="#home" class="hover:text-indigo-600">Home </a>
+          <a href="#courses" class="hover:text-indigo-600">Courses</a>
+          <a href="#about" class="hover:text-indigo-600">About</a>
+          <a href="#contact" class="hover:text-indigo-600">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="home" class="scroll-mt-32 bg-indigo-50">
+        <div class="mx-auto flex max-w-6xl flex-col items-center gap-10 px-4 py-16 md:flex-row md:py-24">
+          <div class="md:w-1/2">
+            <p class="mb-4 font-semibold tracking-widest text-indigo-700">LEARN. BUILD. GROW.</p>
+            <h1 class="mb-6 text-4xl font-bold leading-tight text-gray-900 md:text-6xl">Start your coding journey with us.</h1>
+            <p class="mb-8 max-w-xl text-lg leading-relaxed text-gray-600">Learn web development through practical lessons, guided projects and regular coding practice.</p>
+            <a href="#courses" class="inline-block rounded-lg bg-indigo-700 px-6 py-3 font-semibold text-white transition hover:bg-indigo-800">Explore Courses</a>
+          </div>
+          <div class="w-full md:w-1/2">
+            <img src="course.jpg" class="h-72 w-full rounded-2xl object-cover shadow-2xl md:h-96" alt="A developer working at a computer" />
+          </div>
+        </div>
+      </section>
+
+      <section id="courses" class="scroll-mt-32 px-4 py-16">
+        <div class="mx-auto max-w-6xl">
+          <h2 class="mb-3 text-3xl font-bold">Popular courses</h2>
+          <p class="mb-8 text-gray-600">Build practical skills with focused, project-based learning.</p>
+          <div class="grid gap-6 md:grid-cols-3">
+            <article class="rounded-xl border border-gray-200 p-6 shadow-sm">
+              <h3 class="mb-2 text-xl font-semibold">HTML and CSS</h3>
+              <p class="text-gray-600">Create accessible, responsive web pages from the ground up.</p>
+            </article>
+            <article class="rounded-xl border border-gray-200 p-6 shadow-sm">
+              <h3 class="mb-2 text-xl font-semibold">JavaScript</h3>
+              <p class="text-gray-600">Add interaction and useful behavior to your web projects.</p>
+            </article>
+            <article class="rounded-xl border border-gray-200 p-6 shadow-sm">
+              <h3 class="mb-2 text-xl font-semibold">Frontend Projects</h3>
+              <p class="text-gray-600">Turn your knowledge into portfolio-ready applications.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="scroll-mt-32 bg-gray-100 px-4 py-16">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 class="mb-4 text-3xl font-bold">About CodePath</h2>
+          <p class="text-lg leading-relaxed text-gray-600">CodePath makes learning to code approachable with clear explanations, hands-on practice and projects that reflect real web development.</p>
+        </div>
+      </section>
+
+      <section id="contact" class="scroll-mt-32 px-4 py-16">
+        <div class="mx-auto max-w-3xl text-center">
+          <h2 class="mb-4 text-3xl font-bold">Contact us</h2>
+          <p class="mb-6 text-gray-600">Have a question about a course? We would love to hear from you.</p>
+          <a href="mailto:hello@codepath.example" class="font-semibold text-indigo-700 hover:text-indigo-900">hello@codepath.example</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
